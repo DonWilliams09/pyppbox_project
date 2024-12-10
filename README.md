@@ -118,13 +118,15 @@ The first team focuses on registering new people and training a ReID module. The
 1. *Toolbox File*
 
 To run the detection, tracking, and re-identification process, use the following command:
-```python toolbox.py
+```
+python toolbox.py
 ```
 In toolbox.py, you can specify the paths for the configuration directories used by the detectors and trackers.
 
 2. *Compare Toolbox*
 
 To compare the detection, tracking, and re-identification processes using two different use the following command:
-```python comparebox.py
+```
+python comparebox.py
 ```
 In toolbox.py, you can specify the paths for the configuration directories used by the detectors and trackers.
