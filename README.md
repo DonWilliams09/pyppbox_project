@@ -97,7 +97,8 @@ reider: ...
 │   ├── my_config/ # Project configurations
 │   ├── data/ # Store videos there
 │   ├── comparebox.py/  
-│   ├── toolbox.py/   
+│   ├── toolbox.py/
+│ 
 └── README.md
 ```
 
