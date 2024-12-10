@@ -6,12 +6,6 @@
 
 ***pyppbox*** is a versatile Python toolbox designed for detecting, tracking, and re-identifying individuals. It enables effective tracking of specific individuals across multiple cameras or video scenes, making it ideal for distributed environments like schools, malls, parks, and other public interaction spaces.
 
-
-* ` pyppbox = Python + People + Toolbox `
-* Design for both short and long term people detecting, tracking, and re-identifying.
-* Integrate GUI for easy configuration and demo.
-* Support dictionary and YAML/JSON configuration.
-
 # **Person Detection, Tracking, and Re-Identification Toolbox**
 
 ## **Overview**
