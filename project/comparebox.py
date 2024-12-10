@@ -6,8 +6,6 @@ def ppb_task(config_dir_one, config_dir_two):
     ppbmt_one = MT()  # Multithreading instance for the first reider
     ppbmt_two = MT()  # Multithreading instance for the second reider
 
-    #ppbmt_one.setMainModules(main_yaml=main_configs_one)
-    #ppbmt_two.setMainModules(main_yaml=main_configs_two)
     ppbmt_one.setConfigDir(config_dir_one, load_all=True)
     ppbmt_two.setConfigDir(config_dir_two, load_all=True)
     

@@ -12,8 +12,10 @@ from pyppbox.utils.visualizetools import visualizePeople
 # Use a custom config directory "cfg"
 setConfigDir(config_dir="my_config", load_all=True)
 
-input_video = "data/MaxBaLoPNG.mp4" #MaxBaLo_PNG GasbyPNJ
-#output_video = "data/output_video2.mp4"
+
+input_video = "input_video_path" 
+#output_video = "data/output_video2.mp4" # Pour enregistrer la video
+
 cap = cv2.VideoCapture(input_video)
 
 frame_width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
@@ -21,7 +23,10 @@ frame_height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
 fps = int(cap.get(cv2.CAP_PROP_FPS))
 
 fourcc = cv2.VideoWriter_fourcc(*'mp4v')  # Codec for .mp4 files
-#out = cv2.VideoWriter(output_video, fourcc, fps, (frame_width, frame_height))
+out = cv2.VideoWriter(output_video, fourcc, fps, (frame_width, frame_height)) # To save the video with identification 
+output_video_path = "your_output_video_path"
+
+logs_path = "your_log_path" # To save logs of identification
 
 while cap.isOpened():
     hasFrame, frame = cap.read()
@@ -49,7 +54,7 @@ while cap.isOpened():
             show_reid=reid_count,
             show_ids = (False,False,False)
         )
-        with open("data/logs.txt","a",encoding="utf8") as f:
+        with open(logs_path,"a",encoding="utf8") as f:
             for person in reidentified_people:
                 f.write(f" {datetime.datetime.now()} : {person.faceid} --> {person.faceid_conf}% & {person.deepid} --> {person.deepid_conf}%\n")
                 print(f" {datetime.datetime.now()} : {person.faceid} --> {person.faceid_conf}% & {person.deepid} --> {person.deepid_conf}%\n")
