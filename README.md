@@ -95,22 +95,7 @@ reider: ...
 ├── project/
 │   ├── cfg/  # Basic configuration  
 │   ├── my_config/ # Project configurations
-│   └── ...
-├── trackers/
-│   ├── sort/
-│   ├── deepsort/
-│   ├── centroid/
-│   └── ...
-├── reid/
-│   ├── facenet/
-│   ├── reider/
-│   ├── torchreider/
-│   └── ...
-├── examples/
-│   ├── configs/
-│   └── ...
-├── utils/
-│   └── visualizetools.py
+│   ├── data/ # Store videos there
 └── README.md
 ```
 
