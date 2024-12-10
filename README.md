@@ -92,9 +92,9 @@ reider: ...
 ### **Project Structure**
 
 ```
-├── detectors/
-│   ├── yolo_classic/
-│   ├── yolo_ultralytics/
+├── project/
+│   ├── cfg/  # Basic configuration  
+│   ├── my_config/ # Project configurations
 │   └── ...
 ├── trackers/
 │   ├── sort/
