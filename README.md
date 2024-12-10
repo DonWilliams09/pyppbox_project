@@ -152,5 +152,5 @@ or in real-time using a connected camera.
 ```
 cap = cv2.VideoCapture(0)
 ```
-The output will display the processed video stream, where detected and re-identified people will be labeled with their IDs.
+The output will display the processed video stream, where detected and re-identified people will be labeled with their IDs. If the toolbox fails to recognize a person, they will be required to register for inclusion in the ReID module's training. Once completed, the .pkl file will be updated in the toolbox, enabling the person to be identified in future detections.
 
