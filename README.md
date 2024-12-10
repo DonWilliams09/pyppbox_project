@@ -99,3 +99,14 @@ reider: ...
 └── README.md
 ```
 
+### **Setup**
+
+1. Clone the repository:
+   ```
+    git clone https://github.com/username/project_name.git
+    cd project_name
+   ```
+2. Place the `.pkl` files provided by the first team in the appropriate REID module directory.
+3. Configure paths in the `examples/configs` directory to match your setup.
+4. Add the video you want to process in the 'data' file
+
