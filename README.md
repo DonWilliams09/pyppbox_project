@@ -84,7 +84,33 @@ Set the main modules in the `main_config.yaml` file:
 # tracker: None | Centroid | SORT | DeepSORT
 # reider: None | Facenet | Torchreid
 ###########################################################
-detector: YOLO_Ultralytics
-tracker: DeepSORT
-reider: Facenet
+detector: ...
+tracker: ...
+reider: ...
+```
+
+### **Project Structure**
+
+```
+├── detectors/
+│   ├── yolo_classic/
+│   ├── yolo_ultralytics/
+│   └── ...
+├── trackers/
+│   ├── sort/
+│   ├── deepsort/
+│   ├── centroid/
+│   └── ...
+├── reid/
+│   ├── facenet/
+│   ├── reider/
+│   ├── torchreider/
+│   └── ...
+├── examples/
+│   ├── configs/
+│   └── ...
+├── utils/
+│   └── visualizetools.py
+└── README.md
+```
 
