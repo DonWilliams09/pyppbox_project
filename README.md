@@ -110,3 +110,6 @@ reider: ...
 3. Configure paths in the `examples/configs` directory to match your setup.
 4. Add the video you want to process in the `data` file
 
+### **Workflow**
+
+The first team focuses on registering new people and training a ReID module. These trained models are saved in `.pkl` files and provided to the tracking team. The tracking team uses these `.pkl` files to perform the tracking and re-identification tasks, integrating them into the pipeline with detectors and trackers.
