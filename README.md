@@ -113,3 +113,18 @@ reider: ...
 ### **Workflow**
 
 The first team focuses on registering new people and training a ReID module. These trained models are saved in `.pkl` files and provided to the tracking team. The tracking team uses these `.pkl` files to perform the tracking and re-identification tasks, integrating them into the pipeline with detectors and trackers.
+
+## **Usage**
+1. *Toolbox File*
+
+To run the detection, tracking, and re-identification process, use the following command:
+```python toolbox.py
+```
+In toolbox.py, you can specify the paths for the configuration directories used by the detectors and trackers.
+
+2. *Compare Toolbox*
+
+To compare the detection, tracking, and re-identification processes using two different use the following command:
+```python comparebox.py
+```
+In toolbox.py, you can specify the paths for the configuration directories used by the detectors and trackers.
