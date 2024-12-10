@@ -106,8 +106,8 @@ reider: ...
 
 1. Clone the repository:
    ```
-    git clone https://github.com/username/project_name.git
-    cd project_name
+    git clone https://github.com/DonWilliams09/pyppbox_project.git
+    cd project
    ```
 2. Place the `.pkl` files provided by the first team in the appropriate REID module directory.
 3. Configure paths in the `examples/configs` directory to match your setup.
