@@ -1,6 +1,6 @@
-GOFFIN Gaspard, LOMBARDO Théo, NZITAT William
+# GOFFIN Gaspard, LOMBARDO Théo, NZITAT William
 
-# pyppbox_project
+# **pyppbox_project**
 
 <img src="https://raw.githubusercontent.com/rathaROG/screenshot/master/pyppbox/pyppbox_new_wide.png"><br />
 
