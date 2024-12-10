@@ -121,7 +121,11 @@ To run the detection, tracking, and re-identification process, use the following
 ```
 python toolbox.py
 ```
-In toolbox.py, you can specify the paths for the configuration directories used by the detectors and trackers.
+In toolbox.py, you can specify the the configuration used by the detectors and trackers.
+```
+setConfigDir(config_dir="your_config", load_all=True)
+```
+
 
 2. *Compare Toolbox*
 
@@ -130,3 +134,23 @@ To compare the detection, tracking, and re-identification processes using two di
 python comparebox.py
 ```
 In toolbox.py, you can specify the paths for the configuration directories used by the detectors and trackers.
+```
+config_dir_one = "/path/to/config_one"
+config_dir_two = "/path/to/config_two"
+ppb_task(config_dir_one, config_dir_two)
+```
+
+3. *Input File*
+
+You can run the toolbox either on a pre-saved video
+```
+input_video = "path_to_the_video"
+cap = cv2.VideoCapture(input_video)
+```
+
+or in real-time using a connected camera.
+```
+cap = cv2.VideoCapture(0)
+```
+The output will display the processed video stream, where detected and re-identified people will be labeled with their IDs.
+
