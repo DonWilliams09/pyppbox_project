@@ -132,7 +132,7 @@ setConfigDir(config_dir="your_config", load_all=True)
 
 2. *Compare Toolbox*
 
-To compare the detection, tracking, and re-identification processes using two different use the following command:
+To compare the detection, tracking, and re-identification processes using two different re-ids use the following command:
 ```
 python comparebox.py
 ```
